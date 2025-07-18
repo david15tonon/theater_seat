@@ -1,0 +1,13 @@
+body{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.logo{
+    font-family: "Zeyada", cursive;
+    font-weight: 900;
+    font-size: x-large;
+    font-style: normal;
+}
+a{text-decoration: none;; 
+}
