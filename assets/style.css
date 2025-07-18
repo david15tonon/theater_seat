@@ -1,3 +1,4 @@
+/*General element started */
 body{
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;
@@ -8,6 +9,50 @@ body{
     font-weight: 900;
     font-size: x-large;
     font-style: normal;
+    margin: 0;
+    text-decoration: none;
+    color:orange;
+    transition: color 0.3s ease;
 }
-a{text-decoration: none;; 
+a{text-decoration: none;
+    color: inherit; 
 }
+ul{
+    list-style-type: none;
+}
+
+/*General element ended*/
+
+/*Header Started*/
+header{
+    background-color: #f8f9fa;
+    margin-top: 0;
+}
+/*Header Ended*/
+
+/*Nav started */
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+}
+nav ul li a{
+    padding: 10px 15px;
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover{
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+/*Nav ended*/
+/*About section started*/
+.about{
+    
+}
+/*About section ended*/
