@@ -51,8 +51,84 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 /*Nav ended*/
+/*Hero section started*/
+
+.hero p {
+    margin: 0;
+    background: linear-gradient(45deg, #ff6b6b, #f8f9fa);
+    text-align: center;
+    font-size: 4em;
+    line-height: 1;
+    font-family: 'Zeyada', cursive;
+}
+/*Hero section ended*/
+/*Theater seat section started*/
+.theater-seat{  
+    padding: 40px 20px;
+    text-align: center;
+}
+.theater-seat #p{
+    font-size: 2em;
+    font-family: 'zeyada', cursive;
+    color: rgba(0, 0, 0, 0.733);
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: bold;
+}
+.seats{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+}
+.seats div{
+    display:flex;
+    flex-direction: column ;
+    margin:10px ;
+    align-items: center;
+    border-radius: 50px;
+    border: #f4f5f7 1px solid;
+}
+.seats div:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.seats div h4{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.seats div img{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 10px;
+}
+.seats div button{
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+.seats div span{
+    color: orange;
+}
+/*Theater seat section ended*/
+
+
 /*About section started*/
-.about{
-    
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.about p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.733);
+    text-align: justify;
 }
 /*About section ended*/

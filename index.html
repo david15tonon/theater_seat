@@ -24,90 +24,102 @@
         </nav>
     </header>
     <section class="hero">
-<svg viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Theater Hero" style="background:#f8f9fa">
-  <defs>
-    <radialGradient id="spotlight" cx="50%" cy="0%" r="80%">
-      <stop offset="0%" stop-color="rgba(255, 193, 7, 0.3)">
-        <animate attributeName="stop-opacity" values="0.2;0.4;0.2" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#f8f9fa" stop-opacity="0"/>
-    </radialGradient>
+        <svg viewBox="0 0 600 155" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Theater Hero" style="background:#f8f9fa; margin-bottom: 0px; ">
+        <defs>
+            <radialGradient id="spotlight" cx="50%" cy="0%" r="80%">
+            <stop offset="0%" stop-color="rgba(255, 193, 7, 0.3)">
+                <animate attributeName="stop-opacity" values="0.2;0.4;0.2" dur="4s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="100%" stop-color="#f8f9fa" stop-opacity="0"/>
+            </radialGradient>
 
-    <!-- Animation d’apparition des sièges -->
-    <style>
-     
+            <!-- Animation d’apparition des sièges -->
+            <style>
+            
 
-      .hero-title {
-        animation: fadeIn 2s ease forwards;
-        opacity: 0;
-      }
+            .hero-title {
+                animation: fadeIn 2s ease forwards;
+                opacity: 0;
+            }
 
-      .hero-subtitle {
-        animation: fadeIn 2s ease forwards;
-        opacity: 0;
-        animation-delay: 1s;
-      }
+            .hero-subtitle {
+                animation: fadeIn 2s ease forwards;
+                opacity: 0;
+                animation-delay: 1s;
+            }
 
-      @keyframes slideIn {
-        0% { transform: translateY(20px); opacity: 0; }
-        100% { transform: translateY(0); opacity: 1; }
-      }
+            @keyframes slideIn {
+                0% { transform: translateY(20px); opacity: 0; }
+                100% { transform: translateY(0); opacity: 1; }
+            }
 
-      @keyframes fadeIn {
-        to { opacity: 1; }
-      }
-    </style>
-  </defs>
+            @keyframes fadeIn {
+                to { opacity: 1; }
+            }
+            </style>
+        </defs>
 
-  <!-- Projecteur -->
-  <ellipse cx="400" cy="110" rx="320" ry="90" fill="url(#spotlight)" />
+        <!-- Projecteur -->
+        <ellipse cx="400" cy="110" rx="320" ry="90" fill="url(#spotlight)" />
 
-  <!-- Titre -->
-  <text x="50%" y="90" text-anchor="middle" fill="orange" font-family="Zeyada" font-size="48" class="hero-title">
-    🥂 Theater Seat
-  </text>
-</svg>
+        <!-- Titre -->
+        <text x="50%" y="90" text-anchor="middle" fill="orange" font-family="Zeyada" font-size="48" class="hero-title">
+            🥂 Theater Seat
+        </text>
+        </svg>
+        <p class="hero-p">Experience the magic of theater like never before!</p>
     </section>
-    <section class="about">
-        <h2>About us</h2>
-        <p>Welcome to the Theater Seat booking platform! We are dedicated to providing 
-            you with the best experience when it comes to reserving your seats for the
-            latest shows and events. Our user-friendly interface and seamless booking 
-            process make it easy for you to secure your spot in the theater.</p>
-    </section>
+   
     <section class="theater-seat">
-        <h2>Book Your Seat</h2>
-        <p>Choose your preferred seat from the available options below:</p>
+        <h2>Take your seat here </h2>
+        <p id="p">Choose your preferred seat from the available options below 👇</p>
         <div class="seats">
             <div>
                 <h4>Seat 1</h4>
-               <p>This is the seat 1
-                <img src="assets/media/images/seats/seat_1.svg" alt="Seat 1" width="100" height="100">
+               <p > 
+                    <span>This is the seat 1</span>
+                    <img src="assets/media/images/seats/seat_1.svg" alt="Seat 1" width="100" height="100">
                </p>
                <button>Book Now</button>    
             </div>
             <div>
                 <h4>Seat 2</h4>
-                <p>This is the seat 2
-                <img src="assets/media/images/seats/seat_2.svg" alt="Seat 2" width="100" height="100">
+                <p>
+                    <span>This is the seat 2</span>
+                    <img src="assets/media/images/seats/seat_2.svg" alt="Seat 2" width="100" height="100">
                 </p>
+                <button>Book Now</button>
             </div>
             <div>
                 <h4>Seat 3</h4>
-                <p>This is the seat 3
+                <p>
+                    <span>
+                        This is the seat 3
+                    </span>
                 <img src="assets/media/images/seats/seat_3.svg" alt="Seat 3" width="100" height="100">
                </p>
                <button>Book Now</button>
             </div>
             <div>
                 <h4>Seat etc ..</h4>
-                <p>This is the seat etc ...
-                <img src="assets/media/images/seats/seat_4.svg" alt="Seat etc" width="100" height="100">
+                <p>
+                    <span>
+                        This is the seat etc ...
+                    </span>
+                    <img src="assets/media/images/seats/seat_4.svg" alt="Seat etc" width="100" height="100">
                </p>
                <button>Book Now</button>
             </div>
         </div>
         
+        
+    </section>
+     <section class="about">
+        <h2>About us</h2>
+        <p> We are dedicated to providing 
+            you with the best experience when it comes to reserving your seats for the
+            latest shows and events. Our user-friendly interface and seamless booking 
+            process make it easy for you to secure your spot in the theater.</p>
     </section>
     <section class="contact">
         <h2>Contact Us</h2>
