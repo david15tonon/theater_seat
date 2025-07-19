@@ -1,6 +1,7 @@
 const seeMoreBtn = document.getElementById("see");
 const seatsContainer = document.querySelector(".seats");
 let seatCount = 4;
+let timeoutId; // pour stocker le délai si besoin d'annuler plus tard
 
 function createSeatCard(number) {
     const seatDiv = document.createElement("div");
@@ -32,10 +33,37 @@ function createSeatCard(number) {
     return seatDiv;
 }
 
+// Survol du bouton
 seeMoreBtn.addEventListener("mouseenter", () => {
-    for (let i = 0; i < 3; i++) {
-        seatCount++;
-        const newSeat = createSeatCard(seatCount);
-        seatsContainer.appendChild(newSeat);
-    }
+    timeoutId = setTimeout(() => {
+        for (let i = 0; i < 3; i++) {
+            seatCount++;
+            const newSeat = createSeatCard(seatCount);
+            seatsContainer.appendChild(newSeat);
+        }
+    }, 800); // délai de 1000 millisecondes = 1s
+});
+
+// (optionnel) Si tu veux annuler l’ajout si la souris sort avant 1s :
+seeMoreBtn.addEventListener("mouseleave", () => {
+    clearTimeout(timeoutId);
+});
+
+const backToTopBtn = document.getElementById("backToTop");
+
+// Affiche ou cache le bouton selon le scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+});
+
+// Scroll fluide vers le haut
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
