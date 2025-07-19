@@ -3,6 +3,7 @@ body{
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
+    cursor:copy;
 }
 .logo{
     font-family: "Zeyada", cursive;
@@ -20,6 +21,9 @@ a{text-decoration: none;
 ul{
     list-style-type: none;
 }
+/*hr{
+    color: #ebeef1;
+}*/
 
 /*General element ended*/
 
@@ -44,7 +48,9 @@ nav ul li a{
     padding: 10px 15px;
     color: rgba(0, 0, 0, 0.733);
     font-weight: 500;
+    font-size: 20px;
     transition: background-color 0.3s ease;
+    font-family: 'Geist Mono', mono;
 }
 nav ul li a:hover{
     background-color: #e9ecef;
@@ -67,6 +73,10 @@ nav ul li a:hover{
     padding: 40px 20px;
     text-align: center;
 }
+.theater-seat h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 .theater-seat #p{
     font-size: 2em;
     font-family: 'zeyada', cursive;
@@ -75,6 +85,9 @@ nav ul li a:hover{
     margin-top: 20px;
     text-align: justify;
     font-weight: bold;
+}
+.theater-seat #p span{
+    color: orange;
 }
 .seats{
     display:grid;
@@ -90,6 +103,7 @@ nav ul li a:hover{
 }
 .seats div:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: alias;
 }
 .seats div h4{
     font-size: 1.2em;
@@ -99,8 +113,9 @@ nav ul li a:hover{
     width: 80%;
     height: 80%;
     margin-bottom: 10px;
+    max-width: 100%;
 }
-.seats div button{
+.seats  button{
     padding: 10px 20px;
     background-color: #ff6b6b;
     color: white;
@@ -110,8 +125,27 @@ nav ul li a:hover{
     transition: background-color 0.3s ease;
     margin-bottom: 30px;
 }
+.seats button:hover{
+    box-shadow:1px 2px 1px #e1e3e6;
+    background-color: #e1e3e6;
+}
 .seats div span{
     color: orange;
+}
+#see{
+    margin-top: calc(20px);
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: progress;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    border: none;
+}
+#see:hover{
+    box-shadow:1px 2px 1px #e1e3e6;
+    background-color: #e1e3e6;
+    color: #ff6b6b;
 }
 /*Theater seat section ended*/
 
@@ -119,16 +153,79 @@ nav ul li a:hover{
 /*About section started*/
 .about {
     padding: 40px 20px;
-    text-align: center;
+    border-radius: 50px;
+    border: #f4f5f7 1px solid;
 }
 .about h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
 }
 .about p {
-    font-size: 1.2em;
+    font-size: 2em;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.733);
+    text-align: justify;
+    font-family: 'Zedaya', cursive;
+}
+.about span{
+    color:orange;
+}
+.about .ap{
+    display: flex;
+}
+.about .ap img{
+    background-color: #ff6b6b;
+    transition: color 0.3s ease-in-out;
+    border-radius: 50%;
+    align-items: center;
+    width:calc(100px) ;
+    margin: calc(40px);
+    margin-bottom: 10px;
+}
+/*About section ended*/
+
+/*Contact section started*/
+.contact{
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: #f4f5f7 1px solid;
+}
+.contact h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.contact p,ul{
+    font-size: 2em;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.733);
     text-align: justify;
+    font-family: 'Zedaya', cursive;
 }
-/*About section ended*/
+.contact ul{
+    font-size: 2em;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.733);
+    text-align: left;
+    font-family: 'Zedaya', cursive;
+}
+.contact span{
+    color: orange;
+}
+#succes{
+    border-radius: 20px;
+    border: orange solid 2px;
+}
+/*Contact section ended*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*Footer section started*/
+footer{
+    text-align: center;
+}
+footer #a{
+    color: orange;
+}
+/*Footer section ended*/
